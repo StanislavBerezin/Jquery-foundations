@@ -17,14 +17,3 @@ h1 {
     color: white;
     text-align: center;
 }
-
-.slider {
-    position: relative;
-    display: flex;
-
-    justify-content: center;
-}
-
-.slider>div {
-    position: absolute;
-}
