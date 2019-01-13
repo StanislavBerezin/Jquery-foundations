@@ -1,6 +1,14 @@
+html {
+    min-height: 100%;
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
 body {
-    background-color: #85cff7;
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #3D4258, #6670A0, #9688B4);
+    line-height: 1.5;
+    text-align: center;
+    height: 100vh;
 }
 
 #list_section {
@@ -8,9 +16,10 @@ body {
 }
 
 h1 {
+    font-weight: 200;
+    font-size: 3rem;
     color: white;
-    margin: 0px auto;
-    padding: 20px;
+    text-align: center;
 }
 
 ul {
@@ -42,23 +51,63 @@ p {
 }
 
 .item {
-    background-color: #fff;
-    color: #000;
+    display: inline-block;
+    background: rgba(10, 20, 30, .3);
+    border: 1px solid transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 45px;
+    margin: .25rem 0;
+    vertical-align: middle;
+    line-height: 1;
+    overflow: visible;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.item:hover {
+    border: 1px solid rgba(255, 255, 255, .8);
+    color: white;
+    background: rgba(255, 255, 255, .1);
 }
 
 input[type='text'] {
-    font-size: 12px;
-    padding: 6px;
-    border: 1px solid #000;
-    border-radius: 3px;
+    display: inline-block;
+    background: rgba(251, 251, 251, 0.3);
+    border: 1px solid transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 20px;
+    transition: 1s;
+    outline: none;
+    margin-right: 20px;
 }
 
 input[type='submit'] {
-    background-color: #fff;
-    color: #000;
-    border-radius: 8px;
-    border: none;
-    padding: 5px;
+    display: inline-block;
+    background: rgba(100, 34, 144, 0.3);
+    border: 1px solid transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 45px;
+    margin: .25rem 0;
+    vertical-align: middle;
+    line-height: 1;
+    overflow: visible;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 1s;
+}
+
+input[type="submit"]:hover {
+    background: rgba(145, 0, 241, 0.3);
+    border: 1px solid rgba(255, 255, 255, .8);
 }
 
 #newItemButton {

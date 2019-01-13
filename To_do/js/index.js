@@ -10,7 +10,7 @@ $(function () {
         //geting text from input
         var text = $('input:text').val();
         //appending it to our list which is a ul
-        $list.append('<li>' + text + '</li>');
+        $list.append('<li class="item" >' + text + '</li>');
         //getting the input field back to zero
         $('input:text').val('');
     });
